@@ -107,25 +107,3 @@ O projeto inclui testes automatizados localizados no diretório `/tests`. Para e
 Este projeto está preparado para deploy no Google Cloud Run. O `Dockerfile` define a imagem do container. Siga a documentação oficial do Google Cloud para realizar o deploy de um container: [https://cloud.google.com/run/docs/deploying](https://cloud.google.com/run/docs/deploying).
 
 *   **URL da Aplicação no Cloud Run:** `https://fc-lab-01-43209898677.southamerica-east1.run.app`
-
-## Estrutura do Projeto
-.
-├── cmd/server/ # Ponto de entrada da aplicação (main.go)
-├── config/ # Configurações
-├── handler/ # Manipuladores HTTP (controllers)
-├── internal/ # Lógica de negócio, serviços, entidades
-│ ├── entity/ # Estruturas de dados (ex: Weather)
-│ └── infra/ # Implementações de acesso a APIs externas, etc.
-│ └── service/ # Serviços (ex: ViaCEP, WeatherAPI)
-├── tests/ 
-├── .env.example 
-├── .env 
-├── Dockerfile # Definição da imagem Docker
-├── docker-compose.yml # Orquestração local com Docker Compose
-├── go.mod 
-├── go.sum 
-└── README.md 
-
-## Autor
-
-*   **MchlAlex** - [https://github.com/MchlAlex](https://github.com/MchlAlex)
